@@ -1,0 +1,19 @@
+<html>
+    <head> <script type="text/javascript" src="jquery-3.1.0.js"></script>
+        <title>Jquery Example</title>
+         <script type="text/javascript">
+            $(document).ready( function(){
+                $("button").click(function(){
+                    $("p").toggle(600, function(){
+                        alert("Oh SHIT where it go!!")
+                    });
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <p>This is media</p>
+        <button>Click Me</button>
+    </body>
+</html>
