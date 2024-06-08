@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     editingId = urlParams.get('id');
 
     dropdown.addEventListener('change', function() {
-        const selectedOption = dropdown.options[dropdown.selectedIndex].id;
+        const selectedOption = dropdown.options[dropdown.selectedIndex].value;
         const price = getPrice(selectedOption);
         priceInput.value = formatPrice(price);
     });
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const name = document.getElementById('Name').value;
         const nric = document.getElementById('NRIC').value;
         const phone = document.getElementById('PhNum').value;
-        const selectedOption = dropdown.options[dropdown.selectedIndex].id;
+        const selectedOption = dropdown.options[dropdown.selectedIndex].value;
         const price = getPrice(selectedOption);
         const formattedPrice = formatPrice(price);
 
@@ -83,11 +83,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function getPrice(option) {
         switch (option) {
-            case 'p1':
+            case 'Apple':
                 return 100;
-            case 'p2':
-                return 200;
-            case 'p3':
+            case 'Banana':
+                return 200; 
+            case 'Mango':
                 return 300;
             default:
                 return 0;

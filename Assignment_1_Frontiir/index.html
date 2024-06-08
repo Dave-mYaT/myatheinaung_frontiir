@@ -12,8 +12,33 @@
         <button onclick="searchTable()">Search</button>
     </div>
     <button onclick="location.href='create.html';">Create</button>
+    <script src="script_display2.js"></script>
 
-    <div id="outputArea"></div>
-    <script src="script_display.js"></script>
+    <div> 
+        <table id="tablefield" border="1">
+            <thead>
+                <th>Name</th>
+                <th>NRIC</th>
+                <th>Phone</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>ID</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </div>
+<style>
+    #tablefield {
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    th, td {
+        padding: 15px;
+        text-align: le;
+    }
+</style>
 </body>
 </html>
